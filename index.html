@@ -1,15 +1,9 @@
 <html>
   <head>
     <title>Aldwin Beckett | Author</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Aldwin Beckett | Author" />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta name="title" content="Aldwin Beckett | Author" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
@@ -33,6 +27,10 @@
         --pico-font-family: Playfair, serif;
       }
 
+      a {
+        text-decoration: none;
+      }
+
       html,
       body {
         height: 100vh;
@@ -48,13 +46,18 @@
         --pico-typography-spacing-vertical: 0.2rem;
       }
 
+      main p.large {
+        margin-top: 1em;
+        font-size: 1em;
+      }
+
       main h1 {
         font-size: 3em;
         --pico-font-weight: 400;
       }
 
-      footer p {
-        justify-content: center;
+      footer div.center {
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -85,8 +88,8 @@
             her secrecy will forever obscure their future.
           </p>
 
-          <p>
-            <a target="_blank" href="http://mybook.to/souvienne">Preorder</a>
+          <p class="large">
+            <a target="_blank" href="http://mybook.to/souvienne">Preorder 📚</a>
           </p>
         </div>
         <div>
@@ -98,27 +101,19 @@
       </div>
     </main>
 
-    <footer class="container-fluid float-center">
+    <footer class="container-fluid">
       <div class="grid">
-        <div></div>
-        <div>
-          <p>
-            <a
-              class="secondary"
-              href="mailto:aldwinbeckett@proton.me"
-              target="_blank"
-              >aldwinbeckett@proton.me</a
-            >
-            |
-            <a
-              class="secondary"
-              href="https://bsky.app/profile/aldwinbeckett.bsky.social"
-              target="_blank"
-              >aldwinbeckett.bsky.social</a
-            >
-          </p>
+        <div class="center">
+          <a href="mailto:aldwinbeckett@proton.me" target="_blank"
+            >💌 aldwinbeckett@proton.me</a
+          >
+          <span class="pico-color-azure-600">─୨ৎ─</span>
+          <a
+            href="https://bsky.app/profile/aldwinbeckett.bsky.social"
+            target="_blank"
+            >🦋 aldwinbeckett.bsky.social</a
+          >
         </div>
-        <div></div>
       </div>
     </footer>
   </body>
